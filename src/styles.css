@@ -73,11 +73,12 @@ a {
     color: #fff;
     text-decoration: none;
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .count-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 30%;
     }
     .container {
         width: 80%;
@@ -88,7 +89,7 @@ a {
         margin-top: 30%;
     }
 }
-@media (max-width: 320px) {
+@media only screen and (max-width: 414px) {
     .count-container {
         display: flex;
         flex-direction: column;
@@ -97,10 +98,10 @@ a {
     .container {
         width: 80%;
         margin-left: 18%;
-        margin-top: 75%;
+        margin-top: 50%;
     }
     footer {
-        margin-top: 70%;
+        margin-top: 65%;
     }
     .time {
         height: 170px;
