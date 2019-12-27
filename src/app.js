@@ -1,6 +1,6 @@
-var dateCounter = new Date('Dec 25, 2019 00:00:00').getTime();
+var dateCounter = new Date('Jan 1, 2020 00:00:00').getTime();
 
-const christmas = () => {
+const newYear = () => {
     var now = new Date().getTime();
         diff = dateCounter - now;
 
@@ -20,5 +20,5 @@ const christmas = () => {
         document.getElementById('seconds').innerText = s;
 }
 setInterval(function() {
-    christmas()
+    newYear()
 },1000)
