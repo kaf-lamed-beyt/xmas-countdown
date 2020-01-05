@@ -20,6 +20,10 @@ function christmas() {
     document.getElementById('seconds').innerText = s;
 }
 
-setInterval(() => {
+var start = setInterval(() => {
     christmas()
 }, 1000);
+
+function stop() {
+    clearInterval(start);
+}
