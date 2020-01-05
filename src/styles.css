@@ -22,8 +22,8 @@ header {
 .container  {
     display: flex;
     justify-content: center;
-    height: 50vh;
     margin-top: 15%;
+    height: 100%;
     color: #fff;
     width: 100%;
 }
@@ -64,4 +64,32 @@ footer p {
 footer a {
     color: rgb(23, 212, 171);
     text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25%;
+        margin-top: 15%;
+    }
+    .clock {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin-top: 10%;
+    }
+    .container p {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    footer {
+        margin-top: 48%;
+    }
+    header p {
+        font-size: 15px;
+    }
 }
