@@ -13,7 +13,7 @@ header {
 }
 header p {
     font-size: xx-large;
-    color: crimson;
+    color: rgb(23, 212, 171);
 }
 header {
     margin-bottom: -7%;
@@ -26,10 +26,16 @@ header {
     color: #fff;
     width: 100%;
 }
-.container div p {
+.container div h4 {
     text-align: center;
     padding-top: 15px;
     font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 45px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .clock {
@@ -51,10 +57,10 @@ footer {
 }
 footer p {
     font-size: larger;
-    color: #fff;
+    color: rgb(23, 212, 171);
     margin-bottom: 4%;
 }
 footer a {
-    color: #fff;
+    color: rgb(23, 212, 171);
     text-decoration: none;
 }
