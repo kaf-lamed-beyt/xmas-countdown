@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Indie Flower', cursive;
 }
 body {
     background: #121213;
@@ -31,13 +31,11 @@ header {
     text-align: center;
     padding-top: 15px;
     font-size: larger;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container p {
     text-align: center;
-    padding-top: 10px;
-    font-size: 45px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 3px;
+    font-size: 60px;
 }
 .clock {
     height: 120px;
@@ -45,6 +43,9 @@ header {
     border-radius: 120px;
     border: 1px solid crimson;
     margin: 0 20px;
+}
+.fa-heart {
+    color: red;
 }
 .clock:hover {
     background: rgb(23, 212, 171);
@@ -85,12 +86,13 @@ footer a {
         text-align: center;
         padding-top: 15px;
         font-size: 45px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Indie Flower', cursive;
     }
     footer {
         margin-top: 48%;
     }
     header p {
-        font-size: 15px;
+        font-size: 20px;
+        margin-top: 5%;
     }
 }
