@@ -72,19 +72,19 @@ footer a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 25%;
+        margin-left: 30%;
         margin-top: 15%;
     }
     .clock {
-        width: 100px;
-        height: 100px;
-        border-radius: 100px;
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
         margin-top: 10%;
     }
     .container p {
         text-align: center;
-        padding-top: 10px;
-        font-size: 40px;
+        padding-top: 15px;
+        font-size: 45px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     footer {
