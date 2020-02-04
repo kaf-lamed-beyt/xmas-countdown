@@ -48,12 +48,12 @@ header {
 .fa-heart {
     color: red;
 }
-.clock:hover {
+/* .clock:hover {
     background: rgb(23, 212, 171);
     transition: 2s ease-in-out;
     transform: rotateZ(360deg);
     color: crimson;
-}
+} */
 footer {
     display: flex;
     justify-content: center;
