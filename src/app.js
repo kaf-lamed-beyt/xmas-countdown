@@ -1,4 +1,4 @@
-var deadline = new Date('Dec 25, 2020 00:00:00').getTime();
+var deadline = new Date('Feb 13, 2020 00:00:00').getTime();
 // christmas 
 function christmas() {
     var currentDate = new Date().getTime();
@@ -22,11 +22,10 @@ function christmas() {
      
 }
 
-var start = setInterval(() => {
+var start = setInterval(function() {
     christmas()
+    // Clearing the interval
+    if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+        clearInterval(start)
+    }
 }, 1000);
-
-// Clearing the interval
-if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
-    clearInterval()
-}
