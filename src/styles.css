@@ -25,6 +25,14 @@ body {
 }
 .secondary {
     color: rgb(64, 240, 172);
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.supplement {
+    color: #1c0231;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3em;
 }
 /* margins starts here */
 .mt {
