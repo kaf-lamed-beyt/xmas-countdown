@@ -18,12 +18,15 @@ function christmas() {
     document.getElementById('hours').innerText = h;
     document.getElementById('minutes').innerText = m;
     document.getElementById('seconds').innerText = s;
+
+     
 }
 
 var start = setInterval(() => {
     christmas()
 }, 1000);
 
-function stop() {
-    clearInterval(start);
+// Clearing the interval
+if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+    clearInterval()
 }
