@@ -169,3 +169,19 @@ footer a {
         font-size: 20px;
     }
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: teal;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #e91264;
+    transition: 2s ease-in-out;
+}
