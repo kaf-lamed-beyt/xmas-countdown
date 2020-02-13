@@ -1,26 +1,46 @@
-// var deadline = new Date('Feb 13, 2020 00:00:00').getTime();
-// // christmas 
-// function christmas() {
-//     var currentDate = new Date().getTime();
-//     diff = deadline - currentDate;
+let deadline = new Date('Dec 25, 2020 00:00:00').getTime(); // set date to christmas
 
-//     var seconds = 1000;
-//     var minutes = seconds * 60;
-//     var hours = minutes * 60;
-//     var days = hours * 24;
+const christmas = () => {
+    let currentDate = new Date().getTime();
+    diff = deadline - currentDate;
 
-//     var d = Math.floor(diff / (days));
-//     var h = Math.floor((diff % (days)) / (hours));
-//     var m = Math.floor((diff % (hours)) / (minutes));
-//     var s = Math.floor((diff % (minutes)) / seconds);
+    let seconds = 1000;
+    let minutes = seconds * 60;
+    let hours = minutes * 60;
+    let days = hours * 24;
 
-//     document.getElementById('days').innerText = d;
-//     document.getElementById('hours').innerText = h;
-//     document.getElementById('minutes').innerText = m;
-//     document.getElementById('seconds').innerText = s;
+    let day = Math.floor(diff / (days));
+    let hour = Math.floor((diff % (days)) / (hours));
+    let minute = Math.floor((diff % (hours)) / (minutes));
+    let second = Math.floor(diff % (minutes) / seconds);
 
-     
-// }
+    document.getElementById('days').innerText = day;
+    document.getElementById('hours').innerText = hour;
+    document.getElementById('minutes').innerText = minute;
+    document.getElementById('seconds').innerText = second;
+
+    if(days < 100) {
+        days += "0";
+    } else if (days < 10) {
+        days += "00";
+    }
+    if (hours < 10) {
+        hours += "0";
+    }
+    if(minutes < 10) {
+        minutes += "0";
+    }
+}
+
+let start = setInterval(() => {
+    christmas()
+
+    if(days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+        clearInterval(start)
+    }
+
+}, 1000);
+
 
 // var start = setInterval(function() {
 //     christmas()
