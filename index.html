@@ -10,8 +10,50 @@
     <script src="https://kit.fontawesome.com/d9e33f69d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <footer>
+    <header class="flex mt-2">
+        <p class="lg-text head-title secondary">
+            <i class="fas fa-bells primary"></i> 
+            Christmas is coming
+            <i class="fas fa-bells primary"></i>
+        </p>
+    </header>
+    <main class="flex-container mt-4">
+        <div class="app clock-box flex">
+            <div class="days-block time-grid">
+                <div class="clock-box-days title">
+                    <p class="md-text text-white">Days</p>
+                </div>
+                <div class="countdown-block days mt-2">
+                    <p class="secondary lg-text" id="days"></p>
+                </div>
+            </div>
+            <div class="hours-block time-grid-2 ml">
+                <div class="clock-box-days title">
+                    <p class="md-text text-white">Hours</p>
+                </div>
+                <div class="countdown-block hours mt-2">
+                    <p class="secondary lg-text" id="hours"></p>
+                </div>
+            </div>
+            <div class="minutes-block time-grid-3 ml">
+                <div class="clock-box-days title">
+                    <p class="md-text text-white">Minutes</p>
+                </div>
+                <div class="countdown-block minutes mt-2">
+                    <p class="secondary lg-text" id="minutes"></p>
+                </div>
+            </div>
+            <div class="seconds-block time-grid-4 ml">
+                <div class="clock-box-days title">
+                    <p class="md-text text-white">Seconds</p>
+                </div>
+                <div class="countdown-block seconds mt-2">
+                    <p class="secondary lg-text" id="seconds"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-5 flex mb">
         <p><i class="fas fa-laptop-code"></i> With <i class="fa fa-heart"></i> by <a href="https://twitter.com/calebolojo" target="_blank"> Caleb Olojo</a> © 2019</p>
     </footer>
     <script src="./src/app.js"></script>
