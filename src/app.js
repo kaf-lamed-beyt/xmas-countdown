@@ -34,13 +34,12 @@ const christmas = () => {
 
 let start = setInterval(() => {
     christmas()
-
-    if(days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
-        clearInterval(start)
-    }
-
 }, 1000);
 
+
+if(days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+    clearInterval(start)
+}
 
 // var start = setInterval(function() {
 //     christmas()
