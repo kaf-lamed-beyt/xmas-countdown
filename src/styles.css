@@ -11,8 +11,8 @@ body {
     color: #fff;
     text-align: center;
 }
-.lg-text {
-    font-size: 22px;
+.text-lg {
+    font-size: 55px;
 }
 .sm-text {
     font-size: 18px;
@@ -32,7 +32,6 @@ body {
     color: #1c0231;
     padding-top: 20px;
     text-align: center;
-    font-size: 3em;
 }
 /* margins starts here */
 .mt {
@@ -102,7 +101,7 @@ body {
 flex-container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
 }
 /* header ends here */
 
@@ -140,13 +139,17 @@ footer a {
         font-size: 30px;
         text-transform: capitalize;
     }
+    .text-lg {
+        font-size: 70px;
+    }
     .md-text {
         font-size: 23px;
     }
     .app {
-        display: block;
-        margin-left: 30%;
-        margin-right: 30%;
+        display: flex;
+        width: 100%;
+        margin-left: -2.5%;
+        flex-wrap: wrap;
     }
     .time-grid-2,
     .time-grid-3, 
@@ -154,6 +157,7 @@ footer a {
         margin-top: 8%;
     }
     .time-grid {
+        margin-top: 8%;
         margin-left: 5%;
     }
     .title {
@@ -167,6 +171,7 @@ footer a {
     }
     footer p {
         font-size: 20px;
+        margin-top: 40%;
     }
 }
 
