@@ -19,27 +19,23 @@ const christmas = () => {
     document.getElementById('minutes').innerText = minute;
     document.getElementById('seconds').innerText = second;
 
-    if(days < 100) {
-        days += "0";
-    } else if (days < 10) {
-        days += "00";
+    if(days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+        clearInterval(start)
     }
-    if (hours < 10) {
-        hours += "0";
+}
+
+const addZero = (number, size =2) => {
+    let s = String(number)
+    while(s.length < size) {
+        s = '0' + s;
     }
-    if(minutes < 10) {
-        minutes += "0";
-    }
+    return s
 }
 
 let start = setInterval(() => {
     christmas()
 }, 1000);
 
-
-if(days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
-    clearInterval(start)
-}
 
 // var start = setInterval(function() {
 //     christmas()
