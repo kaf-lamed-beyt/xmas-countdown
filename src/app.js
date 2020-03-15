@@ -9,10 +9,10 @@ const christmas = () => {
     let hours = minutes * 60;
     let days = hours * 24;
 
-    let day = Math.floor(diff / (days));
-    let hour = Math.floor((diff % (days)) / (hours));
-    let minute = Math.floor((diff % (hours)) / (minutes));
-    let second = Math.floor(diff % (minutes) / seconds);
+    let day = ("0" + Math.floor(diff / (days))).slice(-3);
+    let hour = ("0" + Math.floor((diff % (days)) / (hours))).slice(-2);
+    let minute = ("0" + Math.floor((diff % (hours)) / (minutes))).slice(-2);
+    let second = ("0" + Math.floor(diff % (minutes) / seconds)).slice(-2);
 
     document.getElementById('days').innerText = day;
     document.getElementById('hours').innerText = hour;
@@ -44,3 +44,4 @@ let start = setInterval(() => {
 //         clearInterval(start)
 //     }
 // }, 1000);
+ 
