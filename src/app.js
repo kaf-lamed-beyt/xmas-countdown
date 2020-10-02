@@ -1,4 +1,4 @@
-let deadline = new Date('Dec 25, 2020 00:00:00').getTime(); // set date to christmas
+const deadline = new Date('Oct 2, 2020 17:36:00').getTime(); // set date to christmas
 
 const christmas = () => {
     let currentDate = new Date().getTime();
@@ -19,29 +19,14 @@ const christmas = () => {
     document.getElementById('minutes').innerText = minute;
     document.getElementById('seconds').innerText = second;
 
-    if(days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+
+    if(day === "00" && hour === "00" && minute === "00" && second === "00") {
         clearInterval(start)
     }
-}
-
-const addZero = (number, size =2) => {
-    let s = String(number)
-    while(s.length < size) {
-        s = '0' + s;
-    }
-    return s
 }
 
 let start = setInterval(() => {
     christmas()
 }, 1000);
 
-
-// var start = setInterval(function() {
-//     christmas()
-//     // Clearing the interval
-//     if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
-//         clearInterval(start)
-//     }
-// }, 1000);
  
