@@ -106,7 +106,6 @@ flex-container {
 /* header ends here */
 
 /* main content starts here */
-
 .title {
     background-color: rgb(201, 16, 87);
     height: 45px;
@@ -155,7 +154,8 @@ flex-container {
     border-radius: 50%;
     background: rgb(64, 240, 172);
     margin: 0 auto;
-    animation: pump 2s linear infinite;
+    margin-top: 15%;
+    animation: pump 1s linear infinite;
 }
 
 @keyframes pump {

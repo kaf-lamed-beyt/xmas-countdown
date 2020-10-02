@@ -1,4 +1,4 @@
-const deadline = new Date('Oct 2, 2020 17:36:00').getTime(); // set date to christmas
+const deadline = new Date('Dec 24, 2020 00:00:00').getTime(); // set date to christmas
 
 const christmas = () => {
     let currentDate = new Date().getTime();
@@ -29,4 +29,17 @@ let start = setInterval(() => {
     christmas()
 }, 1000);
 
- 
+// preloader condition for the DOM
+// the loader will only show when the browser is still
+// loading the additional scripts
+// and styles for the timer.
+
+document.onreadystatechange = () => {
+    if (document.readyState !== 'complete') {
+      document.querySelector('body').style.visibility = 'hidden'
+      document.querySelector('#loader').style.visibility = 'visible'
+    } else {
+      document.querySelector('#loader').style.display = 'none'
+      document.querySelector('body').style.visibility = 'visible'
+    }
+}
