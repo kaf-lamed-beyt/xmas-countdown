@@ -124,25 +124,25 @@ flex-container {
 /* main content ends here */
 
 .time-grid-1 {
-    animation: popslideIn 4s forwards;
+    animation: popslideIn 3s forwards;
     animation-delay: 2s;
     opacity: 0;
 }
 
 .time-grid-2 {
-    animation: popslideIn 4s forwards;
+    animation: popslideIn 3s forwards;
     animation-delay: 3s;
     opacity: 0;
 }
 
 .time-grid-3 {
-    animation: popslideIn 4s forwards;
+    animation: popslideIn 3s forwards;
     animation-delay: 4s;
     opacity: 0;
 }
 
 .time-grid-4 {
-    animation: popslideIn 4s forwards;
+    animation: popslideIn 3s forwards;
     animation-delay: 5s;
     opacity: 0;
 }
