@@ -1,4 +1,11 @@
-const deadline = new Date('Oct 31, 2020 16:19:00').getTime(); // set date to christmas
+const deadline = new Date('Oct 31, 2020 16:32:00').getTime(); // set date to christmas
+
+const clocks = {
+  daysBox: document.querySelector('.days-block'),
+  hoursBox: document.querySelector('.hours-block'),
+  minsBox: document.querySelector('.minutes-block'),
+  secsBox: document.querySelector('.seconds-block')
+}
 
 const christmas = () => {
     let currentDate = new Date().getTime();
@@ -19,13 +26,21 @@ const christmas = () => {
     document.getElementById('minutes').innerText = minute;
     document.getElementById('seconds').innerText = second;
 
+    // destructuring the clock to obtain 
+    // individual value of each boxes in the view.
+    const { daysBox, hoursBox, minsBox, secsBox } = clocks
 
     if(day === "00" && hour === "00" && minute === "00" && second === "00") {
-        clearInterval(start)
+      clearInterval(start)
 
-        // invocation of xmas demo
-        xmasDemo()
-    }
+      // invocation of xmas demo
+      xmasDemo()
+
+      daysBox.style.display = "none"
+      minsBox.style.display = "none"
+      hoursBox.style.display = "none"
+      secsBox.style.display = "none"
+    } 
 }
 
 let start = setInterval(() => {
