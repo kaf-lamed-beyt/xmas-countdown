@@ -22,6 +22,9 @@ const christmas = () => {
 
     if(day === "00" && hour === "00" && minute === "00" && second === "00") {
         clearInterval(start)
+
+        // invocation of xmas demo
+        xmasDemo()
     }
 }
 
@@ -42,4 +45,17 @@ document.onreadystatechange = () => {
       document.querySelector('#loader').style.display = 'none'
       document.querySelector('#body').style.visibility = 'visible'
     }
+}
+
+// Once the countdown gets to christmas
+// a function call exexutes an animation
+// probably a presention of fireworks and/or an
+// animation depicting one.
+
+const xmasDemo = () => {
+  const displayXmas = "hey it's christmas already"
+
+  return (
+    document.querySelector("xmas").innerHTML = displayXmas
+  )
 }
