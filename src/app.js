@@ -1,4 +1,4 @@
-const deadline = new Date('Dec 24, 2020 00:00:00').getTime(); // set date to christmas
+const deadline = new Date('Oct 31, 2020 16:19:00').getTime(); // set date to christmas
 
 const christmas = () => {
     let currentDate = new Date().getTime();
@@ -56,6 +56,6 @@ const xmasDemo = () => {
   const displayXmas = "hey it's christmas already"
 
   return (
-    document.querySelector("xmas").innerHTML = displayXmas
+    document.querySelector("#xmas").innerHTML = displayXmas
   )
 }
