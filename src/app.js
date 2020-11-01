@@ -1,4 +1,4 @@
-const deadline = new Date('Oct 31, 2020 16:32:00').getTime(); // set date to christmas
+const deadline = new Date('Nov 1, 2020 15:05:00').getTime(); // set date to christmas
 
 const clocks = {
   daysBox: document.querySelector('.days-block'),
@@ -26,12 +26,12 @@ const christmas = () => {
     document.getElementById('minutes').innerText = minute;
     document.getElementById('seconds').innerText = second;
 
-    // destructuring the clock to obtain 
-    // individual value of each boxes in the view.
-    const { daysBox, hoursBox, minsBox, secsBox } = clocks
-
     if(day === "00" && hour === "00" && minute === "00" && second === "00") {
       clearInterval(start)
+
+      // destructuring the clock to obtain 
+      // individual value of each boxes in the view.
+      const { daysBox, hoursBox, minsBox, secsBox } = clocks
 
       // invocation of xmas demo
       xmasDemo()
@@ -66,11 +66,19 @@ document.onreadystatechange = () => {
 // a function call exexutes an animation
 // probably a presention of fireworks and/or an
 // animation depicting one.
-
 const xmasDemo = () => {
-  const displayXmas = "hey it's christmas already"
+  let displayXmas = "<h1>hey it's christmas already</h1>"
 
   return (
     document.querySelector("#xmas").innerHTML = displayXmas
   )
+}
+
+const clockDanceOut = () => {
+  let clockPattern = `
+    @keyframe revertEntry {
+      
+    }
+  `
+  return clockPattern
 }
