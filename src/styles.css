@@ -140,11 +140,15 @@ flex-container {
     animation-delay: 4s;
     opacity: 0;
 }
-
 .time-grid-4 {
     animation: popslideIn 3s forwards;
     animation-delay: 5s;
     opacity: 0;
+}
+#xmas {
+    text-align: center;
+    font-size: 45px;  
+    color: #e91264;
 }
 
 /* loader starts here */
@@ -225,8 +229,12 @@ footer a {
     transition: 2s ease-in-out;
 }
 /* scroll bar */
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
+    #xmas {
+     font-size: 30px;
+     padding: 12px 5px;
+     margin-top: 30%;   
+    }
     .lg-text {
         font-size: 30px;
         text-transform: capitalize;
@@ -242,6 +250,7 @@ footer a {
         width: 100%;
         margin-left: -2.5%;
         flex-wrap: wrap;
+        border: 1px solid red;
     }
     .time-grid-2,
     .time-grid-3, 

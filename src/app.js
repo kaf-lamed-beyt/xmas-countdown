@@ -1,4 +1,4 @@
-const deadline = new Date('Nov 1, 2020 15:05:00').getTime(); // set date to christmas
+const deadline = new Date('Dec 24, 2020 11:59:59').getTime(); // set date to christmas
 
 const clocks = {
   daysBox: document.querySelector('.days-block'),
@@ -67,18 +67,9 @@ document.onreadystatechange = () => {
 // probably a presention of fireworks and/or an
 // animation depicting one.
 const xmasDemo = () => {
-  let displayXmas = "<h1>hey it's christmas already</h1>"
+  let displayXmas = "🎄 Yay! it's christmas already 🎄 🔔 🤭 "
 
   return (
     document.querySelector("#xmas").innerHTML = displayXmas
   )
-}
-
-const clockDanceOut = () => {
-  let clockPattern = `
-    @keyframe revertEntry {
-      
-    }
-  `
-  return clockPattern
 }
