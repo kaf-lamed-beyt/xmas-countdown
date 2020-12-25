@@ -1,4 +1,4 @@
-const deadline = new Date('Dec 24, 2020 11:59:59').getTime(); // set date to christmas
+const deadline = new Date('Dec 24, 2021 11:59:59').getTime(); // set date to christmas
 
 const clocks = {
   daysBox: document.querySelector('.days-block'),
