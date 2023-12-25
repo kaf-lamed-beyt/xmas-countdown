@@ -2,7 +2,7 @@ name: Update Christmas Countdown Deadline
 
 on:
   schedule:
-    - cron: "20 12 25 12 *"
+    - cron: "30 19 25 12 *"
 
 jobs:
   update_countdown:
@@ -14,7 +14,7 @@ jobs:
 
       - name: update deadline
         run: |
-          const nextChristmas = new Date(new Date().getFullYear() + 1, 11, 25, 23, 59, 59).toDateSrting()
+          const nextChristmas = new Date(new Date().getFullYear() + 1, 11, 25, 23, 59, 59).toDateString()
           sed -i "s/new Date('Dec 24, [0-9]* [0-9]*:[0-9]*:[0-9]*').getTime()/new Date('$nextChristmas 23:59:59').getTime()/" src/app.js
 
       - name: commit changes
