@@ -1,0 +1,26 @@
+name: Update Christmas Countdown Deadline
+
+on:
+  schedule:
+    - cron: "20 12 25 12 *"
+
+jobs:
+  update_countdown:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: update deadline
+        run: |
+          const nextChristmas = new Date(new Date().getFullYear() + 1, 11, 25, 23, 59, 59).toDateSrting()
+          sed -i "s/new Date('Dec 24, [0-9]* [0-9]*:[0-9]*:[0-9]*').getTime()/new Date('$nextChristmas 23:59:59').getTime()/" src/app.js
+
+      - name: commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update Christmas countdown deadline"
+          git push
